@@ -1,0 +1,573 @@
+1 
+ABU  
+Asia -Pacific Robot Contest 2026  
+Hong Kong, China  
+Theme & Rules: 
+“Kung Fu Quest ” 
+August 2025 
+Asia-Pacific Robot Contest 2026 Hong Kong, China 
+Organising Committee 
+[https://rthk.hk/aburobocon2026] 
+
+2 
+THEME  
+The theme for ABU Robocon 2026, “Kung Fu Quest ”, invites teams to embark on an exhilarating robotic 
+journey that celebrates the timeless art of Kung Fu and the pursuit of excellence. Set against the backdrop 
+of an ancient martial arts tradition, this competition symbolizes the path of a Kung Fu disciple striving to 
+achieve mastery through discipline, strategy, and teamwork. Each team, consisting of two robots, will 
+navigate a dynamic arena where they must collab orate to assemble powerful weapons, collect sacred 
+Kung -Fu Scrolls, and engage in a strategic Tic -Tac-Toe showdown. This journey mirrors the rigorous 
+training and mental fortitude required to earn the title of a Kung Fu master, blending cultural heritage w ith 
+cutting -edge technology.  
+The game begins with Robot 1 and Robot 2 working in unison to gather resources, reflecting the harmony 
+and coordination essential in martial arts practice. As they construct weapons, teams demonstrate 
+precision and ingenuity  that are  key virtues of Kung Fu. The quest for Kung -Fu Scrolls unfolds in the Meihua 
+Forest, a multi -tiered test inspired by the iconic Meihua Blossom Poles, a cornerstone of Chinese Martial 
+Arts training. Traversing these levels demands stability, precisio n, and foresight, much like a martial artist. 
+In the game, Robot 2 must autonomously identify the correct Scrolls, chart an optimal path, and execute 
+the task with confidence and agility. The climactic Tic -Tac-Toe match tests their strategic prowess, where  
+every move counts, echoing the intellectual depth of martial arts philosophy. This theme not only honours 
+the legacy of Kung Fu but also inspires innovation, encouraging participants to push the boundaries of 
+robotics while respecting tradition.  
+This com petition promises to be a celebration of skill, culture, and technological advancement, leaving a 
+lasting legacy for future generations of robot enthusiasts.  
+THE IMPORTANCE OF SAFETY  
+Safety is the highest priority in ABU Robocon. Teams must prioritize safe ty during all stages, including 
+robot design, manufacturing, and contest participation. Full cooperation with organizers is required to 
+ensure a safe environment for everyone involved (team members, spectators, officials,  and the 
+surroundings. All team members must wear organizer -specified safety gear during games and practice 
+sessions.  
+Contest  
+All domestic competitions selecting teams for ABU Robocon 2026 Hong Kong, China must adhere to the 
+rules in this rulebook. However, if specified materials are una vailable for domestic contests, local 
+organi sers should use the best possible replacements available in their country/region.  
+Contest Dates  
+21/8/2026 (Fri)  Arrival  
+22/8/2026 (Sat)  Test-run, Rehearsal  
+23/8/2026 (Sun)  Contest Date  
+24/8/2026 (Mon)  ABU General Meeting  
+25/8/2026 (Tue)  Departure  
+Contest Venue: Queen Elizabeth Stadium, Wan Chai, Hong Kong  
+3 
+1 Game  Field  
+Figure  1: Game Field  – Top View  
+*Detailed specifications for all Game Field components are provided in Section 1 6. The number shown in
+the Forest area is intended only to indicate location in the rulebook. This number may not appear on the
+actual game field.
+
+4 
+Figure 2: Game Field – Isometric View  1 
+Figure 3: Game Field – Isometric View 2  
+
+ 
+ 
+ 
+ 
+ 
+5 
+ 
+2 Terms of Reference  
+Robot 1 (R1) 
+ • Operates only in the following areas:  
+1. Martial Club (MC);  
+2. Meihua Forest (MF) – R1 Pathway; and  
+3. Arena.  
+• Robot 1 is a Manual or Automatic Robot . It can be operated manually 
+by a team member or autonomously without manual control.  
+Robot 2 (R2) 
+ • Operates only in the following areas:  
+1. Martial Club (MC);  
+2. Meihua Forest (MF) – R2 entrance  zone or R2 exit zone ; 
+3. Meihua Forest (MF) – Forest; and  
+4. Arena.  
+• Robot 2 must be an Automatic Robot . It should operate autonomously 
+without manual control once the game  starts.  
+Martial Club 
+(MC)   • The area where robots assemble Weapons. It contains:  
+1. Start Zone (SZ):  Where both robots begin the game  and retry.  
+2. Staff  Rack ( SR): Holds initial Sta ffs and Assembled Weapons.  
+▪ At the start, four staffs  are placed in each team's SR. 
+3. Spearhead  Rack (S HR): A shared rack holding Spearhead s.  
+▪ At the start,  six spearheads (three types with two pieces 
+each) are positioned in the shared SHR on the centre line.  
+Meihua 
+Forest (MF)  • The area where robots retrieve Kung -Fu Scrolls (KFS) . 
+• Comprises:  
+1. Forest:  Area with twelve  blocks  per team side . 
+2. Pathway:  Perimeter path around the Forest blocks.  
+Kung -Fu 
+Scroll (KFS)  • Game pieces marked with a Chinese character from a specified 
+dictionary.  
+• The dictionary contains fifteen  ‘True' characters and fifteen 'Fake' 
+characters.  
+• KFS allocation per team (placed by opponent during setup):  
+1. Three R1 KFS : Robocon logo marked on 5 sides (excluding 
+bottom) . 
+2. Four R2 KFS : Oracle Bone Characters marked on 5 sides 
+(excluding bottom) . 
+3. One Fake KFS : Random patterns marked on 5 sides (excluding 
+bottom), with a 15mm × 150mm ribbon attached to the bottom.  
+Arena  • The final area where teams compete in Tic -Tac-Toe using collected KFS 
+and Assembled Weapons.  
+• Contains:  
+1. Ramp : Provides access for R1 and R2.  
+2. Tic-Tac-Toe Rack:  3x3 Rack for KFS placement.  
+3. Retry Zone (RZ):  Designated area for retries initiated within the 
+Arena.  
+4. Used Weapon Area:  Designated location for R1 to place 
+weapons after an attack attempt.  
+6 
+Kung Fu 
+Master  •A team achieves "Kung Fu Master"  by placing three of their KFS in a
+single column (Vertical line) or diagonal  on the Tic -Tac-Toe Rack.
+•This team wins immediately.
+3 Game Outline  
+3.1. A game between two teams (Red Team and Blue Team) takes place within three  minutes. 
+The two teams compete simultaneously. Each team has two robots, namely Robot 1 (R1) 
+and Robot 2  (R2).  
+3.2. Game field is divided into three areas: Martial Club (MC), Meihua Forest (MF), and Arena.  
+3.3. Before the match starts :  
+In Martial Club :  
+3.3.1.  Four staffs are placed in the Staff Rack.  
+3.3.2.  Six Spearhead s are place in the Spearhead  Rack . 
+In Meihua Forest (MF) : 
+3.3.3.  Three  R1 Kung -Fu Scrolls  (R1 KFS) are placed by the opponent team onto any of the 
+blocks set around the boundary of the Forest  adjacent  to the Pathway . 
+3.3.4.  Four R2 Kung -Fu Scrolls  (R2 KFS) are placed on any of the vacant blocks within the 
+Fores t. 
+3.3.5.  One Fake Kung -Fu Scroll (Fake KFS) are placed on any of the vacant blocks within 
+the Forest except  the entrance blocks (1,2,3) ,  
+3.4. When the game starts, robots  go to the Martial Club (MC) to assemble weapons using staffs 
+and Spearhead s. 
+3.5. R1 must  carry at least  one assembled weapon before entering  Meihua Forest (MF) . R2 
+follows.  
+3.6. In the Meihua Forest (MF) : 
+3.6.1.  R1 manoeuvres along Pathway to collect R1 KFS.  
+3.6.2.  R2 manoeuvres in Forest to collect R2 KFS.  
+3.6.3.  R1 and R2 are not allowed to touch or move Fake KFS.  
+3.6.4.  Both robots store their respective KFSs for the final Arena battle . 
+3.7. R1 must carry at least one assembled weapon, and/or one R1 KFS before entering Arena. 
+R2 must carry at least one R2 KFS before entering Arena.  
+3.8. In the Arena : 
+3.8.1.  R1 places R1 KFS onto Tic -Tac-Toe Bottom Row slot(s) . 
+3.8.2.  R2 places R2 KFS onto Tic -Tac-Toe Middle Row slot(s) . 
+3.8.3.  R2, carried by R1,  place s R2 KFS  onto Tic -Tac-Toe Top Row slot(s) . 
+3.9. The game ends when a team successfully places three consecutive KFSs in the same 
+vertical column or diagonally and is declared the “Kung Fu Master.”  
+3.10.  If there is no “Kung Fu Master” victory after three  minutes, the team with the highest total 
+score wins. In case of a tie, the result will be determined according to the section 7. 
+ 
+ 
+ 
+ 
+ 
+7 
+ 
+4 Game Procedure  
+4.1 Set up (1 minute)  
+4.1.1.  Each team move the robots into the Start Zone  before the one -minute setup time begins.  
+4.1.2.  Each team has one minute to set up and placed opponent KFS of the Meihua Forest (MF) .  
+4.1.3.  Eight KFS (Three  R1 KFS, Four R2 KFS, One Fake KFS) are placed onto the marked  
+positions of Forest blocks in the Meihua Forest (MF) by the opponent team.  
+4.1.4.  Fake KFS  is not allowed to be placed at the entrance blocks (1,2,3)  of the Meihua Forest 
+(MF).  
+4.1.5.  KFS must be placed within the marked  square  boundary  (350mm on each side ), and on the 
+centre  area of the Forest  block.  KFS must be oriented so that the blank surface (without 
+image) faces down ward.  
+4.1.6.  Three team members and up to three pit crew members are allowed to participate in the 
+set-up.  
+4.1.7.  Set-up time starts  right after the signal from referee and end s right after one minute.  
+4.1.8.  If a team fails to complete the setup  of its own robot s within the set -up time , the team may 
+continue  the set-up after the game begins , but only  with the referee’s permission.  
+4.1.9.  If the opponent team fails to complete the setup of your KFS within the setup time, any 
+unplaced KFS will be placed in the MF by your own team within 30 seconds.  
+4.1.10.  The Robots (including the control unit) must fit within the starting zone , including its space 
+above.  
+4.2 Start of the Game  
+4.2.1.  When the set -up time is over, referees will signal to start the game . 
+4.2.2.  Teams that complete their set -up after the start of the game shall obtain permission from 
+the referee to commence moving their robots.  
+4.2.3.  Team members are not allowed to be on the field during the game. They must obtain 
+permission from the referees to enter the field.  
+4.2.4.  Pit crew members have to stand inside the pre -assigned area out of the game field.  
+4.2.5.  Team members are not allowed to touch th e robots without the permission of the referee.  
+4.3 Martial Club  (MC)  
+This is the starting point where robots collaborate to assemble weapons for use in the Arena to 
+displace the opponent's KFS in the Tic -Tac-Toe Rack.  
+4.3.1.  Both robots are initiated simultaneously . 
+4.3.2.  R1 picks up one or more staffs from its team's Staff Rack. Each team has its own rack 
+containing four staffs.  
+4.3.3.  R2 picks up a Spearhead from the central Spearhead Rack. This rack contains six 
+Spearheads and is shared between both teams.  
+4.3.4.  R2 can only touch, pick up or move one Spearhead  at a time.  
+4.3.5.  R1 and R2 collaborate to assemble a weapon by placing the Spearhead  onto the staff.  
+4.3.6.  R1 shall exclusively hold its staff during assembly, and R2 shall exclusively hold its 
+spearhead;  During assembly, R1 cannot touch R2’s spearhead and vice versa . Additionally, 
+no part of R1 and R2's bodies should come into physical contact with each other throughout 
+the entire assembly process.  
+4.3.7.  R2 must complete the assembly of its current Spearhead with the staff before p icking up 
+another Spearhead.  
+4.3.8.  Completed weapons can only be carried by R1 or stored back in the Staff Rack.  
+4.3.9.  R1 must exit Martial Club to Meihua Forest (MF) with one or more assembled weapons.  
+4.3.10.  R2 exits Martial Club to Meihua Forest (MF) only after R1 exits.  
+4.3.11.  Any staff or Spearhead  that falls outside the game field cannot be reused.  
+4.3.12.  Only R1 can pick up a staff that has fallen within the team's MC area . 
+8 
+4.3.13.  Only R2 can pick up a Spearhead  that has fallen within the team's MC area . 
+4.3.14.  Only R1 can pick up an assembled weapon that has fallen within the team’s MC  area. 
+4.4 Meihua Forest (MF)  
+Robots collaborate to collect Kung -Fu Scrolls for placement in the Arena final battle.  
+For R1: 
+4.4.1.  R1 moves along the MF Pathway to collect R1 KFS.  
+4.4.2.  R1 can pick up one or more KFS at a time.  
+4.4.3.  R1 can go around the MF Pathway as many times as needed.  
+4.4.4.  R1 must carry one or more R1 KFS to enter the Arena.  
+4.4.5.  The team decides how many R1 KFS are required for the Arena Tic -Tac-Toe game.  
+4.4.6.  Dropped R1 KFS outside MF cannot be reused.  
+4.4.7.  R1 can pick up dropped R1 KFS inside MF.  
+4.4.8.  Dropped assembled or dismantled weapons outside MF cannot be reused.  
+4.4.9.  R1 can pick up dropped assembled weapons inside MF.  
+4.4.10.  Dismantled assembled weapons cannot be reused.  
+4.4.11.  The team can request R1 or both R1 and R2  when in MF to retry and return to the Martial 
+Club Retry Zone ( RZ). 
+4.4.12.  R1 must not move  R2 KFS  and Fake KFS, or it will be treated as a violation.  
+For R2: 
+4.4.13.  R2 must enter MF via R2 Entrance Zone . 
+4.4.14.  R2 must collect its first KFS from blocks 1, 2, or 3 from the R2 Entrance Zone.  
+4.4.15.  R2 can pick up KFS from adjacent  blocks of its current position. R2 cannot pick up R2 KFS 
+that are not adjacent to the block it is on.  
+4.4.16.  R2 should only collect R2 KFS.  
+4.4.17.  R2 must  collect and  carry at  least one R2 KFS to exit MF - Forest.  
+4.4.18.  Dropped R2 KFS outside MF - Forest cannot be reused.  
+4.4.19.  R2 can pick up dropped R2 KFS inside MF -Forest.  
+4.4.20.  R2 must exit MF - Forest via one of the designated blocks (10, 11, or 12).  
+4.5 Arena  
+Final battle grounds between the two teams. Robots collaborate to formulate attack and defence 
+with each team’s assembled weapons for attacks and KFS to occupy any of the Tic -Tac-Toe vertical 
+columns or diagonal slots with its KFS to declare as the ultimat e “Kung Fu Master ”. 
+R1 and R2 must enter  and exit  Arena by the ramp . 
+For R1: 
+4.5.1.  R1 enters the Arena under one of the following conditions:  
+4.5.1.1.  Carrying one or more assembled weapons without any R1 KFS  
+4.5.1.2.  Carrying one or more R1 KFS  
+4.5.1.3.  Both (a) and (b)  
+4.5.2.  R1 can place R1  KFS onto vacant slots in the Tic -Tac-Toe bottom row.  
+4.5.3.  R1 can only use an assembled weapon to attempt to remove  an opponent’s KFS occupying 
+any Tic -Tac-Toe slot.  
+4.5.4.  Each assembled weapon can only be used once.  
+4.5.5.  Each weapon is regarded as “used” when it touch es any KFS (own or opponent’s) and 
+releases.  
+4.5.6.  When a weapon is used, R1 must place all parts of the used  weapon in the “Used Weapon 
+Area”, before touching any KFS  on the tic -tac-toe slot again . 
+4.5.7.  Dismantled weapons cannot be used.  
+4.5.8.  R1 can pick up a fallen assembled weapon.  
+9 
+4.5.9.  R1 can pick up fallen R1 KFS that land on its own side.  
+4.5.10.  Fallen R1 KFS on the opponent’s side cannot be reused.  
+4.5.11.  R1 can pick up fallen R2 KFS and pass them to its own R2.  
+For R2: 
+4.5.12.  R2 enters the Arena carrying one or more R2 KFS.  
+4.5.13.  R2 can place R2 KFS onto vacant slots in the Tic -Tac-Toe middle row.  
+4.5.14.  R2 can pick up fallen R2 KFS that land on its own side.  
+4.5.15.  Fallen R2 KFS on the opponent’s side cannot be reused.  
+4.5.16.  R2 can pick up fallen R1 KFS and pass them to its own R1.  
+4.5.17.  R2 must be lifted or carried by R1 , and must not touch  the ground while placing the KFS in 
+the top row  of the Tic-Tac-Toe.  
+5 End Game  
+The game shall end when:  
+5.1. A team wins the “Kung Fu Master” title by filling a vertical or diagonal line in the Tic -Tac-Toe 
+Rack with KFS; or  
+5.2. The three minute game time is over; or  
+5.3. One of the teams is disqualified.  
+6 Scoring  Points  
+Points awarded are as follows:  
+6.1. Weapon Assembly: 10 points  for each weapon assembled . 
+6.2. KFS collection:  10 points  for each KFS successfully carried into Arena  by R1 or R2. 
+6.3. Tic-Tac-Toe: 
+6.3.1.  Each KFS occupying the bottom row – 30 points  
+6.3.2.  Each KFS occupying the middle row – 40 points  
+6.3.3.  Each KFS occupying the top row – 80 poin ts 
+7 Deciding the Winner 
+The winning team is determined in the following order : 
+7.1. The team that achieves absolute  victory as the “Kung Fu Master”  
+7.2. The team with the higher total score  
+7.3. If two teams have the same score, the winner is decided in the following order:  
+7.3.1.  The team with the higher total score in Tic -Tac-Toe 
+7.3.2.  The team with the higher total score from KFS on the Arena  
+7.3.3.  The team with the higher total score in Martial Club  
+7.3.4.  If still tied, the judges will decide the winner  
+8 Violations  
+A forced retry is imposed for any violation, includ ing: 
+8.1. R1 enters opponent  game field areas  
+8.2. R2 enters opponent game field areas  
+8.3. R1 touche s a Spearhead  in the Martial club  area 
+8.4. R2 touches a staff in the Martial club  area 
+8.5. R1 exits Martial Clu b without carrying an assembled  weapon  
+8.6. R2 exits Martial Club before R1 exits  
+8.7. R1 touches R2 KFS, except in Arena  
+8.8. R2 touches R1 KFS, except in Arena  
+8.9. R1 or R2 touches Fake KFS  
+10 
+8.10.  R2 moves onto an MF block when there is a KFS 
+8.11.  R2 violates the adjacent neighbouring pickup rule , please refer to 4.4.15  
+8.12.  R1 enters the Arena without carrying an assembled weapon or a R1 KFS  
+8.13.  R2 enters the Arena without carrying a R2  KFS 
+8.14.  R1 use an assembled weapon more than once in the Arena  
+8.15.  R1 touches another KFS on the Tic -Tac-Toe grid with another assembled weapon before 
+disposing the used weapon in the used weapon area  
+8.16.  R1 or R2 falls from the Meihua Forest or Arena  
+8.17.  R1 or R2 dam ages the game field  
+8.18.  A team member touches a robot without referee permission  
+9 Retry  
+9.1 General Retry Rule s 
+9.1.1.  A retry can be requested by a team or imposed by a referee for robot violations. A team may 
+request a retry at any time by calling out "Retry".  
+9.1.2.  There is no limit to the number of retries.  
+9.1.3.  During a retry, the game clock continues to run.  
+9.1.4.  During a retry, team members may re -adjust the positions of game field items held by the 
+robot , including : 
+9.1.4.1.  KFS; and  
+9.1.4.2.  Staff, Spearhead , Assembled Weapon, or Dismantled Weapon.  
+9.1.5.  During a retry, team members are not allowed to adjust any other items on the game field 
+that are not held by the robot.  
+9.1.6.  Retry commences upon the referee’s signal.  
+9.2 Martial Club Retry  
+9.2.1.  Team can request:  
+9.2.1.1.  R1 to Martial Club’s R1 Retry  Zone 
+9.2.1.2.  R2 to Martial Club’s R2 Retry Zone 
+9.2.1.3.  R1 and R2 to Martial Club’s Retry Zones respectively 
+9.2.2.  Forced Retry: Violated robot to Martial Club’s Retry Zones  
+9.3 Meihua Forest  Retry  
+9.3.1.  Team can request:  
+9.3.1.1.  R1 to Martial Club’s R1 Retry Zone  
+9.3.1.2.  R2 to Martial Club’s R2 Retry Zone 
+9.3.1.3.  R1 and R2 to Martial Club’s Retry Zones respectively 
+9.3.2.  Forced Retry: Violated robot to Martial Club’s Retry Zones  
+9.4 Arena Retry 
+9.4.1.  Team can request for:  
+9.4.1.1.  R1 to Arena ’s Retry Zone  or Martial Club’s R1 Retry Zone   
+9.4.1.2.  R2 to Arena ’s Retry Zone  or Martial Club’s R2 Retry Zone   
+9.4.1.3.  R1 and R2 to Arena ’s Retry Zone  or Martial Club’s Retry Zones respectively 
+9.4.2.  Forced Retry: Violated robot to Arena ’s Retry Zone  
+10 Disqualifications  
+A team shall be disqualified if they are deemed to have committed the following actions intentionally:  
+ 
+ 
+ 
+ 
+ 
+11 
+ 
+10.1.  The design and construction of the robot do not comply with the requirements of the 
+competition rules.  
+10.2.  Acts that pose danger to the game field, its surroundings, the robots, and/or people.  
+10.3.  Acts that that are not in the spirit of fair play.  
+10.4.  The team fails to obey instructions or warnings issued by referees.  
+10.5.  Intentional or attempt to damag e the game field, facilities, equipment, or opponent’s robots.  
+10.6.  The use of drones, flying mechanisms, projectiles for locomotion, or any form of aerial 
+moveme nt. 
+10.7.  Sending  commands to control R2 to complete any task after the game starts.  
+11 Teams  
+11.1.  Each participating country or region shall be represented by one team. Hong Kong as the 
+hosting region  will be represented by  two teams.  
+11.2.  A team consists of three team members who are students and one instructor, all belonging 
+to the same higher education  organisation/university/college/polytechnic.  
+11.3.  Three additional students from the same institution can be registered as pit crew members 
+to assist during setup and in the  pit area.  
+11.4.  Postgraduates cannot participate . 
+ 
+12 Robot s 
+12.1.  Each team is allowed to bring two Robots: R1 (manual /automatic ) and R2 (automatic).  
+12.2.  R1 is manually controlled by an operator  or automatic one capable of operating 
+independently.  
+12.3.  R2 must be an automatic robot capable of operating independently.  
+12.4.  Dimensions of R1 should be within W1000 x L1000 x H1000 mm before game starts . 
+12.5.  Dimensions of R2 should be within W 800 x L800 x H800 mm before game starts . 
+12.6.  During the game , when fully extended , dimension  of R1 must not exceed W1000 x L1800 x 
+H1300 mm.  
+12.7.  During the game, when fully extended , dimension of R2 must not exceed W800 x L1300 x 
+H1300 mm.  
+12.8.  The total weight of both robots, including batteries, controllers, cables, must not exceed 50 
+kg. 
+12.9.  For radio frequency communication, teams can use only Wi -Fi (IEEE 802.11), Zigbee (IEEE 
+802.15), and Bluetooth for the communications between controller and robot . 
+12.10.  The organizer will not control the environment of Wi -Fi, Zigbee or Bluetooth.  
+12.11.  R1 and R2 are not permitted to com municate with each other via wireless transmission 
+during the game.  
+12.12.  Teams can use only batteries, compressed air, and/or elastic force as power sources . 
+12.13.  The nominal voltage of any battery used in the robot, controller, and any other devices 
+during the game  shall not exceed 24V. When connecting batteries in series, the total voltage 
+must be 24V or less . 
+12.14.  Power circuits of Robots should be designed so that any actual voltages in the circuits 
+should be 42V or less. If the power supply system includes multiple i solated circuits  voltage 
+in each system must be 42V or less . 
+12.15.  Teams using compressed air must use either a container made for the purpose or a plastic 
+bottle in pristine condition prepared appropriately. Air pressure must not exceed 600 kPa . 
+12.16.  The following devices are not permitted to be used:  
+12 
+12.16.1.  Lead -acid batteries, adhesive -sealed batteries, explosive and high temperature 
+energy sources, and any items that can damage the game field or hinder the 
+competition . 
+12.16.2.  When using lasers, the teams must use Class 1 or 2 products that comply with IEC 
+60825 -1 and must take safety measures based on the standards . 
+12.17.  Robot Transportation: The Organising Committee will arrange transportation of robots for 
+all teams participating in ABU Robocon 2026. Each team can prepare two (2) transportation 
+boxes with dimensions of 700 mm x 700 mm x 700 mm (L x W x H) per box and a maximum 
+weight of 57 kg per box. Items exceeding the size or weight limits will not be accepted for 
+transportation.  
+13 Safety  
+13.1.  The design and build of robots should not  pose any kind of danger to any person at the 
+competition scene.  
+13.2.  All robots must have a clearly visible red emergency “STOP” button.  
+13.3.  Robots must be designed and manufactured to ensure the safety of team members, 
+opposing teams, surrounding people, and the game field.  
+13.4.  Team members must wear appropriate safety gear as mandated by the organiser during 
+the games and test runs.  
+13.5.  The use of dangerous power sources or mechanisms that could damage the field or harm 
+participants will be prohibited.  
+13.6.  The use of flying mechanisms or drones as part of the robot design is strictly prohibited due 
+to safety concerns and conflict with intended game mechanics.  
+14 Others  
+14.1.  Situations not mentioned in this Rule Book shall be subject to the decisions of the Referee 
+and the Organising  Committee.  
+14.2.  The dimensions, weight, etc., of the game field described in this Rule Booklet may have a 
+tolerance of ± 5% unless otherwise specified.  
+14.3.  All inquiries should be directed to the official website of ABU Robocon 2026 at  
+[https://www.rthk.hk/aburobocon2026 ]. The FAQ section will be provided on the website of 
+the contest.  
+14.4.  Any changes to the Competition Rules will be updated on the official website of the ABU 
+Robocon 2026 Organising Committee.  [https://www.rthk.hk/aburobocon2 026] 
+14.5.  Teams must comply with the instructions of the Organising Committee and the referees to 
+ensure the safety of the robots and/or humans involved.  
+13 
+15 Material * and colours of game field  
+Items  Color  Material  R-G-B
+Start Zone (Red)  
+Plywood, Water Paint  223-34-34
+Zone 1 (Red)  250-220-218
+Start Zone (Blue)  50-0-255
+Zone 1 (Blue)  128-199-226
+Staff Rack  Metal, Oil Paint  155-95-0
+Spearhead Rack  
+Plywood, Water Paint  155-95-0
+Guild line  255-255-255
+Fence  100-62-0
+Zone 2 Pathway (Red)  236-162-151
+Zone 2 Pathway (Blue)  128-191-209
+Meihua Forest (200mm)  41-82-16
+Meihua Forest (400mm)  42-113-56
+Meihua Forest (600mm)  152-166-80
+Ramp  
+Plywood, Water Paint  192-189-182
+Zone 3 (Red)  254-186-163
+Zone 3 (Blue)  129-210-214
+Used weapon area  255-255-0
+Retry zone  (Red)  223-34-34
+Retry zone (Blue)  50-0-255
+Tic-Tac-Toe Rack  Base: Plywood, Water Paint  
+Rack: Acrylic , Transparent  
+Edge: No n-Shiny Vinyl 
+Tape  255-255-25
+-
+0-0-0
+*All items d imension  and specification  should refer  to the APPE NDIX Documents
+ 
+ 
+ 
+ 
+ 
+14 
+ 
+16 Texts/ Symbols on KFS  
+ 
+16.1.  Symbols will be  stick on R1 KFS:  
+ 
+ 
+ 
+16.2.  Lists of texts/symbols will be stick  on R2 KFS: 
+16.2.1.  Real KFS  [Oracle Bone Character (甲骨文 )]: 
+ 
+ 
+16.2.1.  Fake KFS  [Random Pattern ]: 
+ 
+ 
+
+Appendix 1 –Game Field
+1
+R1 START ZONER1 RETRY ZONESTAFF RACKSPEARHEADRACK
+ZONE 2MEIHUA FORESTZONE 1MARTIAL CLUB
+ZONE 3 :ARENAMEIHUA FORESTR1 PATHWAY
+RETRY ZONE
+R1 PATHWAYR2 ENTRANCE ZONER1 PATHWAYR1 PATHWAY
+R1 PATHWAYR2 EXIT ZONER1 PATHWAY
+RETRY ZONEUSED WEAPON AREATIC-TAC-TOE RACKRAMPUSED WEAPON AREARAMPR2 EXIT ZONER1 PATHWAY123456789101112321654987121110R2 ENTRANCE ZONER1 PATHWAYSTAFF RACKR2 START ZONER2 RETRY ZONER2 START ZONER2 RETRY ZONER1 START ZONER1 RETRY ZONE
+MEIHUA FOREST
+Appendix 1 –Game Field Dimension
+2
+Appendix 1 –Game Field Isometric
+3
+10mm THICKNESS ACRYLIC FENCEAppendix 1.1 –Game Field Arena Fencing
+4
+FRONT VIEW(200mmH)WOODEN BASE WITH METAL SUPPORT
+NOTE:ALL DIMENSION IN MM.FRONT VIEW(400mmH)FRONT VIEW(600mmH)
+EXPLODED VIEW(200mmH)EXPLODED VIEW(400mmH)EXPLODED VIEW(600mmH)EXPLODED VIEW(400mmH)
+PREVIEW(400mmH)Appendix 1.2 –Meihua Forest
+5
+FORESTBLOCKAppendix 1.2 –Meihua Forest Isometric
+6
+7Appendix 2.1 –Staff
+Material:PVCpipegluedwithassembleconnector(POMQuickCoupler)PVCPipe:Length1000mm,OuterDiameter20.3mm(±1%);Wallthickness2.0mm(±1%)POMQuickCoupler:30PM,Weight:6gTotalLength:1027mm(±0.5%)TotalWeight:~195g(±3%)
+30PM Quick CouplerPVC wall thicknessPVC Diameter
+Assembled staff
+
+8Appendix 2.2.1 –Spearhead (Fist)
+ItemsMaterialMethodologyWall ThicknessinfillThreadDimension(LxWxH)WeightFistPLA3D printing1.610%G1/2-14 89x84x50mm (±5%)63g (±5%)
+ItemsMaterialModelWeightLengthConnector(Quick Coupler)POM40SM22g(±5%)52.5mm (±0.5%)
+Assembled ItemMaterialAssembled LengthAssembled WeightSpearhead –Fist(3D printing link)PLA assemble with connector (Plastic Quick Coupler)128mm (±1%)85g (±5%)
+WHL
+9Items Material Methodology Wall 
+Thicknessinfill Thread Dimension(LxWxH )Weight
+Fist PLA 3D printing 1.6 10% G1/2- 14 133.6x84x41mm 
+(±5%)59g (±5%)Items Material Model Weight Length
+Connector(Quick Coupler )POM 40SM 22g
+(±5%)52.5mm (±0.5%)
+Assembled Item Material Assembled Length Assembled Weight
+Spearhead - Palm  
+(3D printing link)PLA assemble with connector 
+(Plastic Quick Coupler)80mm ( ±1%) 81g 
+(±5%)
+Appendix 2.2.1 –Spearhead (Palm)
+WH
+L
+10ItemsMaterialMethodologyWall ThicknessinfillThreadDimension(LxWxH)WeightFistPLA3D printing1.610%G1/2-14 251x77x35.8mm (±5%)84g (±5%)ItemsMaterialModelWeightLengthConnector(Quick Coupler)POM40SM22g(±5%)52.5mm (±0.5%)
+Assembled ItemMaterialAssembled LengthAssembled WeightSpearhead –Spear(3D printing link)PLA assemble with connector (Plastic Quick Coupler)288mm (±1%)106g (±5%)
+Appendix 2.2.1 –Spearhead (Spear)
+W
+HL
+Appendix 2.2 –Weapon assembled length
+1295mm(±0.5%)1088mm(±0.5%)1137mm(±0.5%)Weight: 280 g(±3%)Weight: 276 g(±3%)Weight: 301 g(±3%)
+
+NOTE:ALL DIMENSION IN MM.Appendix 2.3 –Staff Rack
+FRONTTOP
+SIDE
+12
+METAL-MADE STAFF RACKAppendix 2.3 –Staff Rack Isometric
+13
+WOODEN BASE WITH METAL SUPPORT
+NOTE:ALL DIMENSION IN MM.6mm DiaMETAL PILIARAppendix 2.4 –Spearhead Rack
+14
+SPEARHEADRACKAppendix 2.4 –Spearhead Rack Isometric
+15
+CENTRE LINE
+NON-SHINYBLACK VINYL TAPE
+FRONT VIEWTOP VIEW
+SIDE VIEWWOODEN BASE WITH METAL SUPPORT20MM THICKNESS ACRYLICFIX WITH COACH BOLTAppendix 3 -Tic-Tac-Toe Rack
+NOTE:ALL DIMENSION IN MM.16
+TIC-TAC-TOE RACKAppendix 3 -Tic-Tac-Toe Rack Isometric
+17
+18Appendix 4.1 –Kung Fu ScrollCarton
+R1 KFSDimension: 350mm x 350mm x 350mm(±5%)Material:3 layers Carton Box, cover by 6 sides of sticker Weight: 630g (±20%)*The same symbolic texts/pictures are sticked on 5 sides of the KFS for recognition, no images on the bottom surface.R2 Real KFSDimension: 350mm x 350mm x 350mm(±5%)Material:3 layers Carton Box, cover by 6 sides of sticker Weight: 630g (±20%)*The same symbolic texts/pictures are sticked on 5 sides of the KFS for recognition, no images on the bottom surface.R2 Fake KFSDimension: 350mm x 350mm x 350mm(±5%)Material:3 layers Carton Box, cover by 6 sides of sticker Weight: 630g (±20%)*Different symbolic texts/pictures are sticked on 5 sides of the KFS for recognition, no images on the bottom surface. A ribbon will be applied on the bottom surface.
+19
+R2 Real
+R2 FakeAppendix 4.3 –Kung Fu Scroll Recognition Patterns
+R1 RedR1 Blue
