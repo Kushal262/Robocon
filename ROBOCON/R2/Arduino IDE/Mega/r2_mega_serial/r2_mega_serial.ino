@@ -49,17 +49,17 @@
 // ================================================================
 //  PIN DEFINITIONS — Drive Motors
 // ================================================================
-#define LF_DIR 22
+#define LF_DIR 36
 #define LF_PWM 2
 
-#define LB_DIR 24
+#define LB_DIR 22
 #define LB_PWM 3
 
 #define RF_DIR 26
-#define RF_PWM 4
+#define RF_PWM 6
 
-#define RB_DIR 36
-#define RB_PWM 6
+#define RB_DIR 24
+#define RB_PWM 4
 
 // ================================================================
 //  PIN DEFINITIONS — Encoder Channels (4-wire encoders)
