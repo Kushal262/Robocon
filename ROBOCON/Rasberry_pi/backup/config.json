@@ -1,0 +1,94 @@
+{
+    "_README": "R1 Config — Robocon 2026. ALL logic on RPi. Arduino flash-once. Edit + restart = instant changes.",
+    "serial": {
+        "port": "/dev/ttyACM0",
+        "baud_rate": 115200,
+        "send_interval_ms": 50,
+        "reconnect_delay_s": 2
+    },
+    "ps4": {
+        "_axis_map": "A0=LX, A1=LY, A2=L2trigger(IGNORE), A3=RX, A4=RY",
+        "axis_lx": 0,
+        "axis_ly": 1,
+        "axis_rx": 3,
+        "axis_ry": 4,
+        "deadzone": 10,
+        "invert_ly": true,
+        "invert_ry": false,
+        "_button_map": "B0=X/Cross, B1=Circle, B2=Triangle, B3=Square, B4=L1, B5=R1, B6=L2, B7=R2, B8=Share, B9=Options, B10=PS, B11=L3, B12=R3",
+        "kill_button": 1,
+        "_kill": "Circle = emergency stop toggle",
+        "slow_mode_button": 4,
+        "_slow": "L1 = hold for half speed",
+        "servo_pos_a_button": 3,
+        "_servo_a": "Square (B3) = move both servos to pos_a",
+        "servo_pos_b_button": 0,
+        "_servo_b": "Cross/X (B0) = move both servos to pos_b"
+    },
+    "motors": {
+        "max_pwm": 255,
+        "speed_cap": 100,
+        "timeout_ms": 300,
+        "slow_mode_factor": 0.5
+    },
+    "ramp": {
+        "enabled": true,
+        "accel_rate": 15,
+        "decel_rate": 25
+    },
+    "mecanum": {
+        "invert_LF": false,
+        "invert_RF": true,
+        "invert_LB": false,
+        "invert_RB": false
+    },
+    "encoder": {
+        "enabled": true,
+        "read_interval_ms": 100
+    },
+    "extra_motors": {
+        "_help": "M5 and M6 driven by right-joystick Y-axis (up/down). Position sync algorithm matches their RPM automatically without needing motor specs.",
+        "_wiring": "M5: PWM=9 DIR=42 EncA=18 EncB=24 | M6: PWM=8 DIR=43 EncA=21 EncB=27",
+        "speed_cap_m5": 80,
+        "_speed_cap_m5": "Max speed percentage for M5 (0-100)",
+        "speed_cap_m6": 80,
+        "_speed_cap_m6": "Max speed percentage for M6 (0-100)",
+        "invert_M5": false,
+        "_inv_m5": "Flip M5 direction relative to joystick",
+        "invert_M6": true,
+        "_inv_m6": "Flip M6 direction relative to joystick",
+        "sync_strength": 1.0,
+        "_sync": "Multiplier to fix speed difference (Range: 0.5 to 5.0). Higher = forces tighter match."
+    },
+    "servos": {
+        "_help": "Run servo_test.py to find correct position values, then update here.",
+        "servo1": {
+            "default_pos": 90,
+            "_default": "Position at startup (degrees)",
+            "pos_a": 45,
+            "_pos_a": "Position when Square button pressed",
+            "pos_b": 135,
+            "_pos_b": "Position when Cross/X button pressed",
+            "min_pos": 0,
+            "_min": "Hard lower limit (degrees)",
+            "max_pos": 180,
+            "_max": "Hard upper limit (degrees)",
+            "speed": 5,
+            "_speed": "Degrees per 20ms step — lower = slower sweep"
+        },
+        "servo2": {
+            "default_pos": 90,
+            "_default": "Position at startup (degrees)",
+            "pos_a": 45,
+            "_pos_a": "Position when Square button pressed",
+            "pos_b": 135,
+            "_pos_b": "Position when Cross/X button pressed",
+            "min_pos": 0,
+            "_min": "Hard lower limit (degrees)",
+            "max_pos": 180,
+            "_max": "Hard upper limit (degrees)",
+            "speed": 5,
+            "_speed": "Degrees per 20ms step — lower = slower sweep"
+        }
+    }
+}

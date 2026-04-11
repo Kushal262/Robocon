@@ -1,0 +1,26 @@
+[Unit]
+Description=R2 Robot Controller (PS4 → Pi → Mega)
+# Wait for Bluetooth to be ready (PS4 controller needs it)
+After=bluetooth.target
+Wants=bluetooth.target
+
+[Service]
+Type=simple
+User=r1
+Group=r1
+WorkingDirectory=/home/r1/Desktop/ROBOCON_pi
+ExecStart=/bin/bash /home/r1/Desktop/ROBOCON_pi/start_r2.sh
+
+# Auto-restart on crash (max 5 restarts within 60 seconds)
+Restart=on-failure
+RestartSec=3
+StartLimitIntervalSec=60
+StartLimitBurst=5
+
+# Send all print() output and errors to system journal
+# View with: journalctl -u r2-robot -f
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target

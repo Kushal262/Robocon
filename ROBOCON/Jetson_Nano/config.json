@@ -1,0 +1,60 @@
+{
+    "_README": "R1 Config — Robocon 2026. ALL logic on RPi. Arduino flash-once. Edit + restart = instant changes.",
+    "serial": {
+        "port": "/dev/ttyACM0",
+        "baud_rate": 115200,
+        "send_interval_ms": 50,
+        "reconnect_delay_s": 2
+    },
+    "ps4": {
+        "_axis_map": "A0=LX, A1=LY, A2=L2trigger(IGNORE), A3=RX, A4=RY",
+        "axis_lx": 0,
+        "axis_ly": 1,
+        "axis_rx": 3,
+        "deadzone": 10,
+        "invert_ly": true,
+        "_button_map": "B0=X, B1=Circle, B2=Triangle, B3=Square, B4=L1, B5=R1, B6=L2, B7=R2, B8=Share, B9=Options, B10=PS, B11=L3, B12=R3",
+        "kill_button": 1,
+        "_kill": "Circle = emergency stop toggle",
+        "slow_mode_button": 4,
+        "_slow": "L1 = hold for half speed",
+        "pneumatic_both_button": 2,
+        "_pneu_both": "Triangle = toggle BOTH pneumatics on/off",
+        "pneumatic_1_button": 6,
+        "_pneu_1": "L2 = toggle pneumatic 1",
+        "pneumatic_2_button": 7,
+        "_pneu_2": "R2 = toggle pneumatic 2"
+    },
+    "motors": {
+        "max_pwm": 255,
+        "speed_cap": 100,
+        "timeout_ms": 300,
+        "slow_mode_factor": 0.5
+    },
+    "ramp": {
+        "enabled": true,
+        "accel_rate": 15,
+        "decel_rate": 25
+    },
+    "mecanum": {
+        "invert_LF": false,
+        "invert_RF": true,
+        "invert_LB": false,
+        "invert_RB": false
+    },
+    "pneumatics": {
+        "_pins_help": "Change these in r1_mega_firmware.ino if you rewire. Then re-flash ONCE.",
+        "pwm_1": 6,
+        "_pwm1": "Pneumatic 1 PWM pin on Mega. Change in .ino if different.",
+        "dir_1": 37,
+        "_dir1": "Pneumatic 1 DIR pin. Set to -1 in .ino if not using DIR.",
+        "pwm_2": 7,
+        "dir_2": 38,
+        "on_pwm": 255,
+        "_on_pwm_help": "PWM value when pneumatic is ON. 255 = full open."
+    },
+    "encoder": {
+        "enabled": true,
+        "read_interval_ms": 100
+    }
+}
