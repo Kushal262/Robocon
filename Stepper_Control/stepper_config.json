@@ -1,0 +1,25 @@
+{
+    "serial": {
+        "port": "/dev/ttyACM0",
+        "baud_rate": 115200,
+        "send_interval_ms": 20,
+        "reconnect_delay_s": 2
+    },
+    "ps4": {
+        "axis_ly": 1,
+        "deadzone": 0.15,
+        "invert_ly": true
+    },
+    "stepper": {
+        "max_speed_pps": 8000,
+        "min_speed_pps": 100,
+        "accel_rate": 100,
+        "decel_rate": 200
+    },
+    "controls": {
+        "kill_button": 1,
+        "slow_mode_button": 4,
+        "slow_factor": 0.3,
+        "home_button": 3
+    }
+}
