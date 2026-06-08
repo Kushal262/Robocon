@@ -162,14 +162,12 @@ def connect_ps4():
 # JOYSTICK → STEPPER SPEED MAPPING
 # ═══════════════════════════════════════════════════
 
-def joystick_to_speed(axis_value, slow_mode=False):
+def joystick_to_velocity(axis_value, slow_mode=False):
     """
-    Convert joystick axis value (-1.0 to +1.0) to stepper speed and direction.
+    Convert joystick axis value (-1.0 to +1.0) to stepper velocity.
     
     Returns:
-        (speed_pps, direction)
-        speed_pps  = 0 to MAX_SPEED_PPS (pulses per second)
-        direction  = 1 (CW) or 0 (CCW)
+        target_velocity (negative for CCW, positive for CW)
     """
     # Apply inversion (so pushing forward = positive)
     if INVERT_LY:
@@ -177,7 +175,7 @@ def joystick_to_speed(axis_value, slow_mode=False):
 
     # Apply deadzone
     if abs(axis_value) < DEADZONE:
-        return 0, 1  # Stopped, direction doesn't matter
+        return 0
 
     # Remove deadzone from range for smooth response
     # Map [DEADZONE, 1.0] → [0.0, 1.0]
@@ -194,12 +192,9 @@ def joystick_to_speed(axis_value, slow_mode=False):
 
     # Below minimum threshold = stop
     if speed_pps < MIN_SPEED_PPS:
-        return 0, 1
+        return 0
 
-    # Determine direction
-    direction = 1 if sign > 0 else 0  # 1 = CW, 0 = CCW
-
-    return speed_pps, direction
+    return speed_pps * sign
 
 
 # ═══════════════════════════════════════════════════
@@ -212,28 +207,34 @@ class StepperRamp:
     def __init__(self, accel_rate, decel_rate):
         self.accel_rate = accel_rate
         self.decel_rate = decel_rate
-        self.current_speed = 0
+        self.current_velocity = 0
 
-    def update(self, target_speed):
-        """Move current_speed toward target_speed at configured rate."""
-        diff = target_speed - self.current_speed
+    def update(self, target_velocity):
+        """Move current_velocity toward target_velocity at configured rate."""
+        if self.current_velocity == target_velocity:
+            return self.current_velocity
 
-        if abs(diff) <= self.accel_rate:
-            # Close enough — snap to target
-            self.current_speed = target_speed
-        elif target_speed > self.current_speed:
-            # Accelerating
-            self.current_speed += self.accel_rate
+        # Accelerating if magnitude increases in the same direction
+        if (target_velocity > 0 and self.current_velocity >= 0 and target_velocity > self.current_velocity) or \
+           (target_velocity < 0 and self.current_velocity <= 0 and target_velocity < self.current_velocity):
+            rate = self.accel_rate
         else:
-            # Decelerating (use decel rate for faster stop)
-            self.current_speed -= self.decel_rate
-            if self.current_speed < 0:
-                self.current_speed = 0
+            # Decelerating (or reversing direction)
+            rate = self.decel_rate
 
-        return int(self.current_speed)
+        if target_velocity > self.current_velocity:
+            self.current_velocity += rate
+            if self.current_velocity > target_velocity:
+                self.current_velocity = target_velocity
+        else:
+            self.current_velocity -= rate
+            if self.current_velocity < target_velocity:
+                self.current_velocity = target_velocity
+
+        return self.current_velocity
 
     def reset(self):
-        self.current_speed = 0
+        self.current_velocity = 0
 
 
 # ═══════════════════════════════════════════════════
@@ -381,11 +382,15 @@ def main():
             ly_raw = js.get_axis(AXIS_LY)
             slow_mode = js.get_button(SLOW_BUTTON)
 
-            # Map joystick to speed + direction
-            target_speed, direction = joystick_to_speed(ly_raw, slow_mode)
+            # Map joystick to target velocity
+            target_velocity = joystick_to_velocity(ly_raw, slow_mode)
 
             # Apply acceleration ramp
-            ramped_speed = ramp.update(target_speed)
+            ramped_velocity = ramp.update(target_velocity)
+            
+            # Extract speed and direction
+            ramped_speed = abs(ramped_velocity)
+            direction = 1 if ramped_velocity >= 0 else 0
 
             # Always send command every cycle (keeps Arduino safety timeout alive)
             send_stepper(conn, ramped_speed, direction)
